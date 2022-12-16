@@ -41,7 +41,7 @@ function Skills() {
                 <Col>
                     <div className={styles.skillbx}>
                         <h2>
-                            Skills
+                            Habilidades
                         </h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores fugiat fuga. Tempora earum aspernatur quasi nihil, blanditiis velit adipisci ad assumenda, aut sapiente quibusdam similique voluptatem vitae, animi voluptatibus.</p>
                         <Carousel responsive={responsive} infinite={true} className={styles.skillSlider}>
