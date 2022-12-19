@@ -55,6 +55,9 @@
     display: flex;
     align-items: center;
 }
+.banner button svg {
+    margin-left: 5px;
+}
 .banner button:hover svg {
     margin-left: 25px;
 }
