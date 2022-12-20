@@ -30,7 +30,7 @@ function Projects() {
   ];
 
   return (
-    <section className={styles.project} id="project">
+    <section className={styles.project} id="projects">
       <Container>
         <Row>
           <Col>
@@ -42,7 +42,7 @@ function Projects() {
               deserunt accusantium.
             </p>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-                <Nav variant="pills" defaultActiveKey="/home">
+                {/* <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
                     <Nav.Link eventKey='first'>Tab One</Nav.Link>
                 </Nav.Item>
@@ -54,7 +54,7 @@ function Projects() {
                     Tab Three
                     </Nav.Link>
                 </Nav.Item>
-                </Nav>
+                </Nav> */}
                 <Tab.Content>
                     <Tab.Pane eventKey='first'>
                         <Row>
