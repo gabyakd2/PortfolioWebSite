@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import imgproj1 from '../../assets/img/gamepedia2.png'
 import imgproj2 from '../../assets/img/notwaste.png'
 import imgproj3 from '../../assets/img/dcarbone2.png'
+import TrackVisibility from 'react-on-screen';
 
 function Projects() {
   const projects = [
@@ -34,27 +35,21 @@ function Projects() {
       <Container>
         <Row>
           <Col>
-            <h2>Proyectos</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              quos consequuntur iure dolor? Corrupti vitae reprehenderit tempore
-              at nam officia ab iure, autem facere nobis sequi earum modi
-              deserunt accusantium.
-            </p>
+          <TrackVisibility>
+                            {
+                              ( { isVisible } ) => 
+                                <div className={isVisible ? 'animate__animated animate__bounceInLeft' : ''}>
+                                  <h2>Proyectos</h2>
+                                  <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                    quos consequuntur iure dolor? Corrupti vitae reprehenderit tempore
+                                    at nam officia ab iure, autem facere nobis sequi earum modi
+                                    deserunt accusantium.
+                                  </p>
+                                </div>
+                            }
+            </TrackVisibility>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-                {/* <Nav variant="pills" defaultActiveKey="/home">
-                <Nav.Item>
-                    <Nav.Link eventKey='first'>Tab One</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="third">
-                    Tab Three
-                    </Nav.Link>
-                </Nav.Item>
-                </Nav> */}
                 <Tab.Content>
                     <Tab.Pane eventKey='first'>
                         <Row>

@@ -3,6 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../../assets/img/astronauta4.png'
 import styles from './banner.module.css'
+import TrackVisibility from 'react-on-screen';
+import 'animate.css'
 
 function Banner() {
 
@@ -49,19 +51,31 @@ function Banner() {
                 <div className={styles.divContainter}>
                     <div>
                         <Col xs={12} md={6} xl={7}>
-                            <span className={styles.tagline}>Bienvenidos a mi Portafolio</span>
-                            <h1>
-                                {'Hola, mi nombre es Gabriel y soy '}
-                                <span className={styles.wrap}>{text}</span>
-                            </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus, reiciendis veniam dolorem eos placeat sed officiis a dolor rem, eveniet recusandae, nesciunt cupiditate temporibus earum doloribus voluptates blanditiis dignissimos.</p>
-                            <button onClick={() => console.log('connect')}>Conectemos <ArrowRightCircle size={25} /> </button>
+                            <TrackVisibility>
+                            {( { isVisible } ) => 
+                                <div className={isVisible ? 'animate__animated animate__backInLeft' : ''}>
+                                    <span className={styles.tagline}>Bienvenidos a mi Portafolio</span>
+                                    <h1>
+                                        {'Hola, mi nombre es Gabriel y soy '}
+                                        <span className={styles.wrap}>{text}</span>
+                                    </h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus, reiciendis veniam dolorem eos placeat sed officiis a dolor rem, eveniet recusandae, nesciunt cupiditate temporibus earum doloribus voluptates blanditiis dignissimos.</p>
+                                    <button onClick={() => console.log('connect')}>Conectemos <ArrowRightCircle size={25} /> </button>
+                                </div>
+                            }
+                            </TrackVisibility>
                         </Col>
                     </div>
                     <div className={styles.divImg}>
-                        <Col xs={12} md={6} xl={7}>
-                            <img className={styles.imgBanner} src={headerImg} alt="Headder Img" />
-                        </Col>
+                    <TrackVisibility>
+                            {( { isVisible } ) => 
+                                <div className={isVisible ? 'animate__animated animate__backInRight' : ''}>
+                                    <Col xs={12} md={6} xl={7}>
+                                        <img className={styles.imgBanner} src={headerImg} alt="Headder Img" />
+                                    </Col>
+                                </div>
+                            }
+                    </TrackVisibility>
                     </div>
                 </div>
                 </Row>

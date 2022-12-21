@@ -15,8 +15,8 @@ app.listen(5000, () => console.log('Server listening'));
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: '*******@gmail.com',
-        pass: ''
+        user: 'gabrielkpo774@gmail.com',
+        pass: 'mzbldlxhxfnaaxxv'
     },
 });
 
@@ -34,10 +34,18 @@ router.post('/contact', (req, res) => {
     const message = req.body.message
     const mail = {
         from: name,
-        to: '*******@gmail.com',
+        to: 'gabrielkpo774@gmail.com',
         subject: 'Contacto desde portafolio',
         html: `<p>Name: ${name} </p>
                 <p>Email: ${email} </p>
                 <p>Message: ${message} </p>`
     }
-})
+
+contactEmail.sendMail(mail, (error) => {
+    if(error) {
+        res.json(error);
+    } else {
+        res.json({ code: 200, status: "Mensaje enviado" })
+    }
+    })
+});
