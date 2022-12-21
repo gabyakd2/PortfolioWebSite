@@ -43,7 +43,7 @@ function Skills() {
                         <h2>
                             Habilidades
                         </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores fugiat fuga. Tempora earum aspernatur quasi nihil, blanditiis velit adipisci ad assumenda, aut sapiente quibusdam similique voluptatem vitae, animi voluptatibus.</p>
+                        <p>Tecnologías en las que trabajé, me destaco y cuento con experiencia.</p>
                         <Carousel responsive={responsive} infinite={true} className={styles.skillSlider}>
                             <div className={styles.image}>
                                 <img className={styles.imgCar} src={logohtml} alt="logo html" />

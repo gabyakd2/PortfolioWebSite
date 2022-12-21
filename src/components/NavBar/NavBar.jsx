@@ -44,8 +44,8 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href='#'><img src={logogith} alt='logogit'/></a>
-                <a href='#'><img src={logolink} alt='logolinked'/></a>
+                <a href='https://github.com/gabyakd2'><img src={logogith} alt='logogit'/></a>
+                <a href='https://www.linkedin.com/in/gabriel-saldana00/'><img src={logolink} alt='logolinked'/></a>
             </div>
             <button className='vvd' onClick={() => console.log('connect')}><span>Conectemos</span></button>
           </span>

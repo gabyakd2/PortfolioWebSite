@@ -199,6 +199,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .imgLogo {
   width: 100px;
 }
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
 .App {
   text-align: center;
 }

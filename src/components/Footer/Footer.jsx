@@ -16,8 +16,8 @@ function Footer() {
                 </Col>
                 <Col sm={6} className='text-center text-sm-end'>
                     <div className='social-icon'>
-                        <a href=''> <img src={logogith} alt="" /> </a>
-                        <a href=''> <img src={logolink} alt="" /> </a>
+                        <a href='https://github.com/gabyakd2'> <img src={logogith} alt="logo gith" /> </a>
+                        <a href='https://www.linkedin.com/in/gabriel-saldana00/'> <img src={logolink} alt="logo link" /> </a>
                     </div>
                     <p>CopyRight 2022. All Right Reserved</p>
                 </Col>

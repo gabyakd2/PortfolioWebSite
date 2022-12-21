@@ -41,10 +41,7 @@ function Projects() {
                                 <div className={isVisible ? 'animate__animated animate__bounceInLeft' : ''}>
                                   <h2>Proyectos</h2>
                                   <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    quos consequuntur iure dolor? Corrupti vitae reprehenderit tempore
-                                    at nam officia ab iure, autem facere nobis sequi earum modi
-                                    deserunt accusantium.
+                                    Algunos proyectos en los cuales trabajé y pude desarrollar de manera freelance. Donde me pude desempeñar en algunos como Fullstack y otros como Frontend. 
                                   </p>
                                 </div>
                             }

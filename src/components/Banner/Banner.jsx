@@ -12,7 +12,7 @@ function Banner() {
     const [ isDeleting, setIsDeleting ] = useState(false);
     const [ text, setText ] = useState('');
     const [ delta, setDelta ] = useState(300 - Math.random() * 100)
-    const toRotate = [ 'Web Developer', 'Web Designer' ];
+    const toRotate = [ 'Frontend Developer', 'Web Designer' ];
     const period = 2000;
 
     useEffect(() => {
@@ -48,8 +48,6 @@ function Banner() {
     <section className={styles.banner} id='home'>
         <Container>
             <Row className='align-items-center'>
-                <div className={styles.divContainter}>
-                    <div>
                         <Col xs={12} md={6} xl={7}>
                             <TrackVisibility>
                             {( { isVisible } ) => 
@@ -59,28 +57,23 @@ function Banner() {
                                         {'Hola, mi nombre es Gabriel y soy '}
                                         <span className={styles.wrap}>{text}</span>
                                     </h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus, reiciendis veniam dolorem eos placeat sed officiis a dolor rem, eveniet recusandae, nesciunt cupiditate temporibus earum doloribus voluptates blanditiis dignissimos.</p>
+                                    <p>Mi objetivo principal es desarrollarme profesionalmente, evolucionar en mi sector, enriquecer y aportar mis conocimientos. Me destaco por saber trabajar en equipo, adaptarme a cambios para la resolución de problemas, saber escuchar e impulsar el trabajo individual y colectivo para poder alcanzar el objetivo en común. </p>
                                     <button onClick={() => console.log('connect')}>Conectemos <ArrowRightCircle size={25} /> </button>
                                 </div>
                             }
                             </TrackVisibility>
                         </Col>
-                    </div>
-                    <div className={styles.divImg}>
-                    <TrackVisibility>
-                            {( { isVisible } ) => 
-                                <div className={isVisible ? 'animate__animated animate__backInRight' : ''}>
-                                    <Col xs={12} md={6} xl={7}>
-                                        <img className={styles.imgBanner} src={headerImg} alt="Headder Img" />
-                                    </Col>
-                                </div>
-                            }
-                    </TrackVisibility>
-                    </div>
-                </div>
-                </Row>
+                        <Col xs={12} md={6} xl={5}>
+                            <TrackVisibility>
+                                    {( { isVisible } ) => 
+                                        <div className={isVisible ? 'animate__animated animate__backInRight' : ''}>
+                                                <img className={styles.imgBanner} src={headerImg} alt="Headder Img" />
+                                        </div>
+                                    }
+                            </TrackVisibility>
+                        </Col>
+            </Row>
         </Container>
-        
     </section>
   )
 }
