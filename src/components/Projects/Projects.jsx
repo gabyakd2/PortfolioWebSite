@@ -87,6 +87,7 @@ function Projects() {
                                   <div>
                                     <a href="https://github.com/SerCM/not-waste_PF-HENRY"><button className={styles.buttonCard}>Repo <ArrowRightCircle size={25} /></button></a>
                                     <a href="https://not-waste-app.vercel.app/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
+                                    <a href="https://www.youtube.com/watch?v=Ricsgx0oQ84&ab_channel=GabrielSalda%C3%B1a"><button className={styles.buttonCard}>Video <ArrowRightCircle size={25} /></button></a>
                                   </div>
                                 </div>
                               </div>
