@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/img/logo.png';
 import logogith from '../../assets/img/github.svg'
 import logolink from '../../assets/img/linkedin.svg'
+import logomail from '../../assets/img/envelope.svg'
 
 
 function NavBar() {
@@ -46,8 +47,9 @@ function NavBar() {
             <div className="social-icon">
                 <a href='https://github.com/gabyakd2'><img src={logogith} alt='logogit'/></a>
                 <a href='https://www.linkedin.com/in/gabriel-saldana00/'><img src={logolink} alt='logolinked'/></a>
+                <a href='mailto:gabrielsal00@hotmail.com'><img src={logomail} alt="logomail" /></a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Conectemos</span></button>
+            <a href='mailto:gabrielsal00@hotmail.com'><button className='vvd'><span>Conectemos</span></button></a>
           </span>
         </Navbar.Collapse>
       </Container>

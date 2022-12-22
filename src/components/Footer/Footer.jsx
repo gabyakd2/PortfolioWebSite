@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import logo from '../../assets/img/logo.png';
 import logogith from '../../assets/img/github.svg';
 import logolink from '../../assets/img/linkedin.svg';
+import logomail from '../../assets/img/envelope.svg'
 import './footer.css'
 
 
@@ -18,6 +19,7 @@ function Footer() {
                     <div className='social-icon'>
                         <a href='https://github.com/gabyakd2'> <img src={logogith} alt="logo gith" /> </a>
                         <a href='https://www.linkedin.com/in/gabriel-saldana00/'> <img src={logolink} alt="logo link" /> </a>
+                        <a href='mailto:gabrielsal00@hotmail.com'><img src={logomail} alt="logomail" /></a>
                     </div>
                     <p>CopyRight 2022. All Right Reserved</p>
                 </Col>

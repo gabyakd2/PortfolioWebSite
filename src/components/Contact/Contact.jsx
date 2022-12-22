@@ -29,7 +29,7 @@ function Contact() {
     async function handleSubmit (e){
         e.prevent.default()
         setButtonText('Enviando...')
-        let response = await fetch('http://local:5000/contact', {
+        let response = await fetch('http://localhost:5000/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'Application/json;charset=utf-8'
@@ -58,21 +58,21 @@ function Contact() {
                             {( { isVisible } ) => 
                                 <div className={isVisible ? 'animate__animated animate__zoomIn' : ''}>
                                     <h2>Contáctame</h2>
-                                    <form onSubmit={handleSubmit}>
+                                    <form onSubmit={handleSubmit} action="https://formsubmit.co/gabrielsal00@hotmail.com" method="POST">
                                         <Row>
                                             <div className='containerInput'>
                                                 <Col sm={6} className='px-1'>
-                                                    <input type='text' value={formDetails.firstName} placeholder='Nombre' onChange={(e) => handleFormUpdate('firstName', e.target.value)} />
+                                                    <input name='Nombre' type='text' value={formDetails.firstName} placeholder='Nombre' onChange={(e) => handleFormUpdate('firstName', e.target.value)} />
                                                 </Col>
                                                 <Col sm={6} className='px-1'>
-                                                    <input type='text' value={formDetails.lastName} placeholder='Apellido' onChange={(e) => handleFormUpdate('lastName', e.target.value)}/>
+                                                    <input name='Apellido' type='text' value={formDetails.lastName} placeholder='Apellido' onChange={(e) => handleFormUpdate('lastName', e.target.value)}/>
                                                 </Col>
                                             </div>
                                             <Col sm={6} className='px-1' id='inputEm'>
-                                                <input type='email' value={formDetails.email} placeholder='Email' onChange={(e) => handleFormUpdate('email', e.target.value)}/>
+                                                <input name='Email' type='email' value={formDetails.email} placeholder='Email' onChange={(e) => handleFormUpdate('email', e.target.value)}/>
                                             </Col>
                                             <Col>
-                                                <textarea row='6' value={formDetails.message} placeholder='Mensaje' onChange={(e) => handleFormUpdate('message', e.target.value)}></textarea>
+                                                <textarea name='Mensaje' row='6' value={formDetails.message} placeholder='Mensaje' onChange={(e) => handleFormUpdate('message', e.target.value)}></textarea>
                                                 <button type='submit'><span>{buttonText}</span></button>
                                             </Col>
                                             {

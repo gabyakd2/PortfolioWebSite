@@ -58,7 +58,7 @@ function Banner() {
                                         <span className={styles.wrap}>{text}</span>
                                     </h1>
                                     <p>Mi objetivo principal es desarrollarme profesionalmente, evolucionar en mi sector, enriquecer y aportar mis conocimientos. Me destaco por saber trabajar en equipo, adaptarme a cambios para la resolución de problemas, saber escuchar e impulsar el trabajo individual y colectivo para poder alcanzar el objetivo en común. </p>
-                                    <button onClick={() => console.log('connect')}>Conectemos <ArrowRightCircle size={25} /> </button>
+                                    <a href='mailto:gabrielsal00@hotmail.com'><button>Conectemos <ArrowRightCircle size={25} /> </button></a>
                                 </div>
                             }
                             </TrackVisibility>

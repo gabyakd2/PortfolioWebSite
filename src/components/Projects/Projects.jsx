@@ -1,34 +1,34 @@
 import React from "react";
 import { Col, Container, Row, Tab } from "react-bootstrap";
-import ProjectCard from '../ProjectCard/ProjectCard';
+// import ProjectCard from '../ProjectCard/ProjectCard';
 import colorSharp2 from '../../assets/img/color-sharp2.png';
 import styles from './projects.module.css';
-import Nav from 'react-bootstrap/Nav';
 import imgproj1 from '../../assets/img/gamepedia2.png'
 import imgproj2 from '../../assets/img/notwaste.png'
 import imgproj3 from '../../assets/img/dcarbone2.png'
 import TrackVisibility from 'react-on-screen';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 function Projects() {
-  const projects = [
-    {
-      title: "Videogame App",
-      description:
-        "Diseñar, desarrollar una App de videojuegos que incluye búsquedas, filtrados, ordenamientos y creación de los mismos.",
-      imgUrl: imgproj1
-      },
-    {
-      title: "Not Waste",
-      description:
-        "Desarrollar renderizado condicional dependiendo el usuario que ingrese a la aplicación. Implementar formulario de proveedor para la carga de productos. Crear funcionalidad de borrado lógico. Diseño y desarrollo de landing. Asistir a dailys utilizando metodologías ágiles para mejorar el desempeño del grupo y proponer ideas para avanzar con el proyecto.",
-        imgUrl: imgproj2
-      },
-    {
-      title: "DeCarboneCompraTodo",
-      description: "App realizada de manera freelance para emprendimiento.",
-      imgUrl: imgproj3
-    },
-  ];
+  // const projects = [
+  //   {
+  //     title: "Videogame App",
+  //     description:
+  //       "Diseñar, desarrollar una App de videojuegos que incluye búsquedas, filtrados, ordenamientos y creación de los mismos.",
+  //     imgUrl: imgproj1
+  //     },
+  //   {
+  //     title: "Not Waste",
+  //     description:
+  //       "Desarrollar renderizado condicional dependiendo el usuario que ingrese a la aplicación. Implementar formulario de proveedor para la carga de productos. Crear funcionalidad de borrado lógico. Diseño y desarrollo de landing. Asistir a dailys utilizando metodologías ágiles para mejorar el desempeño del grupo y proponer ideas para avanzar con el proyecto.",
+  //       imgUrl: imgproj2
+  //     },
+  //   {
+  //     title: "DeCarboneCompraTodo",
+  //     description: "App realizada de manera freelance para emprendimiento.",
+  //     imgUrl: imgproj3
+  //   },
+  // ];
 
   return (
     <section className={styles.project} id="projects">
@@ -50,22 +50,61 @@ function Projects() {
                 <Tab.Content>
                     <Tab.Pane eventKey='first'>
                         <Row>
-                            {
+                            {/* {
                             projects.map((pro, i) => {
                                 return (
                                     <ProjectCard 
                                     key={i}
-                                    {...pro} />
+                                    title={pro.title}
+                                    description={pro.description}
+                                    imgUrl={pro.imgUrl}
+                                    // github={pro.github}
+                                    // deploy={pro.deploy}
+                                    // {...pro} 
+                                    />
                                 )
                             })
-                            }
+                            } */}
+                            <Col sm={6} md={4}>
+                              <div className={styles.projimgbx}>
+                                <img src={imgproj1} alt="img card" className='img-fluid'/>
+                                <div className={styles.projtxtx}>
+                                  <h4>Videogames App</h4>
+                                  <span>"Diseñar, desarrollar una App de videojuegos que incluye búsquedas, filtrados, ordenamientos y creación de los mismos."</span>
+                                  <div>
+                                    <a href="https://github.com/gabyakd2/Videogames-App"><button className={styles.buttonCard}>Repo <ArrowRightCircle size={25} /></button></a>
+                                    <a href="https://deploy-videogames-jet.vercel.app/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </Col>
+                            <Col sm={6} md={4}>
+                              <div className={styles.projimgbx}>
+                                <img src={imgproj2} alt="img card" className='img-fluid'/>
+                                <div className={styles.projtxtx}>
+                                  <h4>Not Waste</h4>
+                                  <span>"Desarrollar renderizado condicional dependiendo el usuario que ingrese a la aplicación. Implementar formulario de proveedor para la carga de productos. Crear funcionalidad de borrado lógico. Diseño y desarrollo de landing. Asistir a dailys utilizando metodologías ágiles para mejorar el desempeño del grupo y proponer ideas para avanzar con el proyecto."</span>
+                                  <div>
+                                    <a href="https://github.com/SerCM/not-waste_PF-HENRY"><button className={styles.buttonCard}>Repo <ArrowRightCircle size={25} /></button></a>
+                                    <a href="https://not-waste-app.vercel.app/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                          </Col>
+                          <Col sm={6} md={4}>
+                              <div className={styles.projimgbx}>
+                                <img src={imgproj3} alt="img card" className='img-fluid'/>
+                                <div className={styles.projtxtx}>
+                                  <h4>DeCarboneCompraTodo</h4>
+                                  <span>"App realizada de manera freelance para emprendimiento."</span>
+                                  <div>
+                                    {/* <button>Repo <ArrowRightCircle size={25} /></button> */}
+                                    <a href="https://dcarbonetecompratodo.com/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                          </Col>
                         </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey='second'>
-                            Lorem Ipsum
-                    </Tab.Pane>
-                    <Tab.Pane eventKey='third'>
-                            Lorem Ipsum
                     </Tab.Pane>
                 </Tab.Content>
             </Tab.Container>

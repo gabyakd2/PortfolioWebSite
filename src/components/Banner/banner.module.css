@@ -48,6 +48,9 @@
     display: flex;
     align-items: center;
 }
+.banner a {
+    text-decoration: none;
+}
 .banner button svg {
     margin-left: 5px;
 }

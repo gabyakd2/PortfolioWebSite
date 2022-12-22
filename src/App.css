@@ -36,12 +36,13 @@ h1, h2, h3, h4, h5, h6{
   line-height: normal;
 }
 nav.navbar {
-  padding: 18px 0;
+  padding: 5px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  background: linear-gradient(#c2628a, #53168b);
 }
 nav.navbar.scrolled {
   padding: 0px 0;
