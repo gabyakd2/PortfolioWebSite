@@ -70,7 +70,7 @@ function Projects() {
                                 <img src={imgproj1} alt="img card" className='img-fluid'/>
                                 <div className={styles.projtxtx}>
                                   <h4>Videogames App</h4>
-                                  <span>"Diseñar, desarrollar una App de videojuegos que incluye búsquedas, filtrados, ordenamientos y creación de los mismos."</span>
+                                  <span>"Aplicación de videojuegos donde se pueden realizar búsquedas, filtrados, ordenamientos y creación de los mismos."</span>
                                   <div>
                                     <a href="https://github.com/gabyakd2/Videogames-App"><button className={styles.buttonCard}>Repo <ArrowRightCircle size={25} /></button></a>
                                     <a href="https://deploy-videogames-jet.vercel.app/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
@@ -83,7 +83,7 @@ function Projects() {
                                 <img src={imgproj2} alt="img card" className='img-fluid'/>
                                 <div className={styles.projtxtx}>
                                   <h4>Not Waste</h4>
-                                  <span>"Desarrollar renderizado condicional dependiendo el usuario que ingrese a la aplicación. Implementar formulario de proveedor para la carga de productos. Crear funcionalidad de borrado lógico. Diseño y desarrollo de landing. Asistir a dailys utilizando metodologías ágiles para mejorar el desempeño del grupo y proponer ideas para avanzar con el proyecto."</span>
+                                  <span>"E-commerce desarrollado con la idea principal de evitar la generación de residuos, hacer que más personas puedan acceder a alimentos comprando a precio reducido a través de la compra-venta de los mismos que sean sobrantes o proximos a vencer. "</span>
                                   <div>
                                     <a href="https://github.com/SerCM/not-waste_PF-HENRY"><button className={styles.buttonCard}>Repo <ArrowRightCircle size={25} /></button></a>
                                     <a href="https://not-waste-app.vercel.app/"><button className={styles.buttonCard}>Deploy <ArrowRightCircle size={25} /></button></a>
